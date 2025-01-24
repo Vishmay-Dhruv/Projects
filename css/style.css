@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    top:0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#login_box {
+    height: 100%;
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.hero_img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 4px 31px #0000000A;
+    border: 20px solid #FFFFFF;
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* navbar section  */
+
+
+.sidebar {
+    width: 10vw;
+    height: 100%;
+    background-color: #FFFFFF;
+}
+
+li{
+    list-style: none;
+}
+
+.sidebarlist li{
+    letter-spacing: 0px;
+    padding: 10px;
+}
+
+.sidebarlist li:hover{
+    background-color: #FFF3F4;
+}
+
+.sidebarlist li img{
+    height: 18px;
+}
+
+@media (min-widtth: 900px) and (max-width: 1000px){
+    .hero_img {
+        max-width: 67%;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .sidebarlist li a span{
+        display: none;
+    }
+    .sidebarlist li{
+        display: flex;
+        width: fit-content;
+        justify-content: start;
+    }
+    .sidebarlist{
+        width: fit-content;
+        padding: 0;
+    }
+    #sidebarMenu{
+        width: fit-content;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .company_logo {
+      display: none;
+    }
+    #sidebarMenu{
+      display: none;
+    }
+  }
+
+
+  /* Content Section */
+  #contentSection{
+    background-color: #FAFAFA;
+  }
+
+  .circle{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+  }
+
+  .paid_bg{
+    background-color: #38ce594f;;
+    padding: 5px;
+  }
+
+  .pending_bg{
+    background-color: #bababa57;
+    padding: 5px;
+  }
+
+  .failed_bg{
+    background-color: #ff45453a;;
+    padding: 5px;
+  }
+
+ .invoice-table{
+    table-layout: fixed;
+    width: 100%;
+ }
+
+ /* Floating Label Css */
+.input-group{
+    position: relative;
+}
+.inputText{
+    outline: none;
+    background: white;
+}
+.placeholder{
+    position: absolute;
+    top: 10px;
+    left: 17px;
+    font-size: 15px;
+    transition: 0.3s;
+    pointer-events: none;
+    height: 24px;
+}
+.inputText:focus + .placeholder{
+    transform: translate(-4px,-22px) scale(0.92);
+    background-color: white;
+    z-index: 1111;
+}
+/*  */
+
+.options{
+    accent-color: red;
+}
